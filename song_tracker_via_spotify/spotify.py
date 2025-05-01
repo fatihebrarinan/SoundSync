@@ -7,15 +7,17 @@ from flask import Flask, request, redirect, send_file
 import sqlite3
 from datetime import datetime, timedelta
 from apscheduler.schedulers.background import BackgroundScheduler
+from dotenv import load_dotenv
+import os
 
-
+load_dotenv()
 
 # Spotify API Bilgileri
-SPOTIFY_CLIENT_ID = "5a929801b6aa41d49182e4902a407bde"
-SPOTIFY_CLIENT_SECRET = "2d9fc106a3d548cb9988e4ffeb90c13c"
-REDIRECT_URI = "http://localhost:5000/callback"
+SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+REDIRECT_URI = os.getenv("REDIRECT_URI")
 
-MEKAN_ID = 1
+MEKAN_ID = int(os.getenv("MEKAN_ID", 1))
 
 # OAuth Yapılandırması
 sp_oauth = SpotifyOAuth(
