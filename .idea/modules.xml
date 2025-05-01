@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/song_tracker_via_spotify.iml" filepath="$PROJECT_DIR$/.idea/song_tracker_via_spotify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SoundSync.iml" filepath="$PROJECT_DIR$/.idea/SoundSync.iml" />
     </modules>
   </component>
 </project>
