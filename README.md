@@ -2,7 +2,7 @@
 
 A dynamic, Flask-based collaborative music voting platform that integrates with the Spotify Web API. SoundSync allows users to connect their Spotify accounts, fetch their top tracks, and influence a live DJ dashboard through a real-time voting system.
 
-## 🚀 Engineering Highlights
+## Highlights
 
 - **Authentication**: Secure user login and token management flow utilizing the Spotify Web API.
 - **Vote Decay**: A time based mathematical decay system for votes, ensuring the live music queue remains fresh and prevents older tracks from dominating the board.
